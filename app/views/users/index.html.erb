@@ -1,0 +1,4 @@
+<strong>Username | Email | Password</strong>
+<% @user.each do |user| %>
+  <p><%= user.username %> | <%= user.email %> | <%= user.password %> | <%= link_to "Edit", edit_user_path(user.id) %></p>
+<% end %>
